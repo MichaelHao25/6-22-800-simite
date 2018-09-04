@@ -1,0 +1,1253 @@
+@import "reset.css";
+
+
+@font-face {font-family: "iconfont";
+  src: url('../font/font_720102_w7ga6nk3xji.eot?t=1529995594136'); /* IE9*/
+  src: url('../font/font_720102_w7ga6nk3xji.eot?t=1529995594136#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff;charset=utf-8;base64,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') format('woff'),
+  url('../font/font_720102_w7ga6nk3xji.ttf?t=1529995594136') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('../font/font_720102_w7ga6nk3xji.svg?t=1529995594136#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-sms:before { content: "\e76d"; }
+
+.icon-location:before { content: "\e620"; }
+
+.icon-qq:before { content: "\e623"; }
+
+.icon-at:before { content: "\e62d"; }
+
+.icon-wechat:before { content: "\e610"; }
+
+.icon-mobilephoneverification:before { content: "\e65f"; }
+
+.icon-weibo:before { content: "\e6c8"; }
+
+.icon-Share:before { content: "\e674"; }
+
+.icon-ie:before { content: "\e694"; }
+
+.icon-call:before { content: "\e611"; }
+
+
+
+
+
+
+
+@media(min-width 1300px)
+    .container
+        width 1230px
+
+.public-header
+    position relative
+    height 90px
+    @media(max-width 767px)
+        height 60px
+    .brand
+        height 100%
+        font-size 0
+        i
+            display inline-block
+            width 0
+            height 100%
+        img
+        i
+            vertical-align middle
+        img
+            @media(max-width 767px)
+                height 40px
+    .clear
+        height 100%
+        @media(max-width 1199px)
+            width 100%
+            padding 20px 0 30px
+            display flex
+            justify-content center
+            align-items center
+            flex-direction column
+            height auto 
+    .mobile-menu
+        height 100%
+        left 0
+        right 0
+        width 100%
+        background #ffffff
+        z-index 10
+        @media(max-width 1199px)
+            position absolute
+            height auto
+            left -15px
+            right -15px
+            padding 0 15px
+            display none
+            border-top 1px solid #00a0e9
+    .moblie-toggle
+        height 100%
+        width 50px
+        font-size 0
+        text-align center
+        display none
+        cursor pointer
+        @media(max-width 1199px)
+            display block
+        @media(max-width 767px)
+            padding 0 10px
+            box-sizing border-box
+        i
+        span
+            display inline-block
+            vertical-align middle
+        &.active
+            span
+                background rgba(0,0,0,0)
+                &:after
+                    top 0
+                    transform rotateZ(45deg)
+                    transition top 0.3s,bottom 0.3s,transform 0.3s 0.3s
+                &:before
+                    bottom 0
+                    transform rotateZ(-45deg)
+                    transition top 0.3s,bottom 0.3s,transform 0.3s 0.3s
+        span
+            position relative
+            width 100%
+            height 2px
+            background #00a0e9
+            cursor pointer
+            transition 0.3s
+            &:before
+            &:after
+                content ''
+                position absolute
+                left 0
+                right 0
+                height 2px
+                width 100%
+                background #00a0e9
+                transition 0.3s
+            &:after
+                top -20px
+                transition top 0.3s 0.3s,bottom 0.3s 0.3s,transform 0.3s
+                @media(max-width 767px)
+                    top -13px
+            &:before
+                bottom -20px
+                transition top 0.3s 0.3s,bottom 0.3s 0.3s,transform 0.3s
+                @media(max-width 767px)
+                    bottom -13px
+                
+        i
+            width 0
+            height 100%
+    .menu
+        height 100%
+        .nav
+            font-size 18px
+            color #1d2741
+            line-height 90px
+            @media(max-width 1199px)
+                float none
+                line-height 50px
+            .item
+                position relative
+                &+.item
+                    padding-left 20px
+                    @media(max-width 1199px)
+                        padding-left 0
+                @media(max-width 1199px)
+                    float none
+            a
+                position relative
+                display block
+                margin 0 20px
+                transition 0.3s
+                &:after
+                &:before
+                    content ''
+                    position absolute
+                    top 25px
+                    left 0
+                    width 0
+                    transition 0.3s width 0.2s
+                    height 1px
+                    background #00a0e9
+                    @media(max-width 1199px)
+                        top auto 
+                        bottom 0
+                &:before
+                    left auto 
+                    right 0
+                    top auto
+                    bottom 25px
+                    transition 0.3s width 0.2s
+                    @media(max-width 1199px)
+                        bottom 2px
+                &:hover
+                &.active
+                    color #00a0e9
+                    &:after
+                    &:before
+                        width 100%
+                    // color #ffffff
+                    // background #ac915b
+            .child-menu
+                display none
+                position absolute
+                top 100px
+                background #ffffff
+                z-index 10
+                @media(max-width 1199px)
+                    position static
+                    padding 0 15px
+                .item
+                    min-width 160px
+                    height 45px
+                    a
+                        font-size 14px
+                        padding 0 15px
+                        line-height 45px
+     
+.public-footer
+    background #111523
+    .news
+        padding 40px 0 60px
+        width 100%
+        margin 0 auto
+        box-sizing border-box
+        @media(max-width 767px)
+            padding-bottom 0
+        h3
+            padding-bottom 15px
+            font-size 16px
+            color #c39c4a
+            line-height 30px
+            font-weight normal
+        .item
+            padding 15px 0
+            font-size 12px
+            line-height 20px
+            color #856b36
+            border-bottom 1px dashed #856b36
+            a
+                transition 0.3s
+                &:hover
+                    color #ffffff
+    .about
+        padding 45px 0
+        width 100%
+        margin 0 auto
+        // @media(max-width 767px)
+        //     width 100%
+        .contact
+            padding-bottom 25px
+            font-size 16px
+            color #c39c4a
+            line-height 26px
+            @media(max-width 767px)
+                display flex
+                flex-wrap wrap
+                text-align center
+            a
+                position relative
+                transition 0.3s
+                @media(max-width 767px)
+                    flex 0 0 50%
+                &+a
+                    margin-left 46px
+                    @media(max-width 767px)
+                        margin-left 0
+                    &:after
+                        position absolute
+                        content ""
+                        left -23px
+                        width 1px
+                        top 5px
+                        bottom 5px
+                        background #4f4739
+                        @media(max-width 767px)
+                            display none
+                &:hover
+                    text-decoration underline
+        h3
+            font-size 14px
+            color #ffffff
+            line-height 1
+        p
+            padding-top 16px
+            font-size 14px
+            color #999999
+            line-height 1.5
+            span+span
+                padding-left 10px
+            &.copy-right
+                padding-top 20px
+                color #666666
+            &.pt0
+                padding-top 0
+
+
+
+.main-banner
+    .no-js-banner
+        a
+            display block
+            height 400px
+            background url('') center center no-repeat
+            @media(max-width 767px)
+                height 400px
+                background-position -400px center  
+    a
+    img
+        display block
+        margin 0 auto
+        height 772px
+        width 100%
+        background url('') center center no-repeat
+        @media(max-width 1199px)
+            height 600px
+        @media(max-width 767px)
+            height 400px
+            background-size auto 100%
+    .swiper-pagination-bullet
+        opacity 1
+        background #fff
+        transition 0.3s
+        border-radius 6px
+        width 12px
+        height 12px
+        display none+'\9'
+    .swiper-pagination-bullet-active
+        width 22px
+        opacity 1
+        background #00a0e9
+
+
+
+.index-footer
+    background #000000
+    .brand
+        display block
+        width 126px
+        margin 0 auto
+        padding 54px 0 25px 0
+        img
+            display block
+            width 100%
+    .df
+        @media(max-width 767px)
+            display flex
+            align-items center
+            padding 20px 0
+            .brand
+                padding 0
+    .nav
+        text-align justify
+        text-align-last justify
+        line-height 0
+        padding-bottom 25px
+        @media(max-width 767px)
+            text-align-last center
+            text-align center
+        &:after
+            content ""
+            display inline-block
+            font-size 0
+            width 100%
+            height 0
+            overflow hidden
+        a
+            display inline-block
+            font-size 16px
+            color #ffffff
+            line-height 26px
+            text-align left
+            text-align-last left
+            transition 0.3s
+            &:hover
+                color #00a0e9
+            @media(max-width 767px)
+                width 20%
+                text-align center
+                text-align-last center
+
+    .qr-code
+        width 100px
+        margin 0 auto
+        border 1px solid #333333
+        .pic
+            margin 4px auto 0
+            width 92px
+            img
+                display block
+                width 100%
+        h3
+            font-size 14px
+            color #ffffff
+            text-align center
+            line-height 24px
+    .copy-right
+        position relative
+        padding-top 18px
+        font-size 14px
+        line-height 32px
+        color #cccccc
+        text-align center
+        border-bottom 1px solid #333333
+        padding-bottom 32px
+        .c333333
+            color #333333
+        .share
+            position absolute
+            right 0
+            bottom 40px
+            transition 0.3s
+            @media(max-width 767px)
+                bottom 10px
+            a
+                float left
+                margin-left 20px
+                img
+                    display block
+    .nav-f
+        font-size 12px
+        color #666666
+        padding 24px 0 40px
+        line-height 26px
+        span
+            width 100px
+            text-align right
+            padding-right 8px
+            @media(max-width 1199px)
+                width 100%
+                text-align left
+                padding 0 8px
+                box-sizing border-box
+        a
+            margin 0 8px
+
+
+
+.main-index-title
+    margin-top 10px
+    padding 50px 0
+    height 88px
+    text-align center
+    background url('img/4f2564ec00c3c862bd15465354375129.png') center center no-repeat
+    &.p60-0
+        margin 0
+        padding 60px 0
+    h3
+        font-size 36px
+        color #010101
+    small
+        font-size 18px
+        color #999999
+        text-transform uppercase
+.main-index-more
+    &.pt50
+        padding-top 50px
+    &.tal
+        a
+            margin 0
+    a
+        display block
+        width 186px
+        height 44px
+        margin 0 auto
+        border 1px solid #e6e6e6
+        text-align center
+        font-size 16px
+        color #333333
+        line-height 44px
+        transition 0.3s
+        &:hover
+            color #ffffff
+            background #00a0e9
+.main-index-product-type
+    .label
+        padding-bottom 50px
+        font-size 0
+        text-align center
+        a
+            margin 0 10px 10px
+            display inline-block
+            width 158px
+            height 36px
+            line-height 36px
+            border-radius 18px
+            background #f5f5f5
+            font-size 18px
+            color #333333
+            border 1px solid #e6e6e6
+            transition 0.3s
+            &:hover
+                background #00a0e9
+                color #ffffff
+    .item-wrap
+        position relative
+        width 25%
+        padding-top 18%
+        overflow hidden
+        @media(max-width 1199px)
+            width 33.33%
+            padding-top 23%
+        @media(max-width 767px)
+            width 50%
+            padding-top 40%
+    .item
+        position absolute
+        top 0
+        bottom 0
+        left 0
+        right 0
+        transition 0.3s
+        &:hover
+            transform scale(1.2)
+        @media(max-width 1199px)
+            background-size cover
+
+.main-index-company-profile
+    .container
+        background #f6f6f6
+    .bg
+        height 470px
+        background url('') right center no-repeat
+        @media(max-width 767px)
+            height 300px
+            background-position center center
+            background-size cover
+    .content
+        padding 80px 35px 0 60px
+        @media(max-width 767px)
+            padding 20px 0
+    h3
+        position relative
+        font-size 24px
+        color #333333
+        line-height 1.5
+        padding-bottom 40px
+        &:after
+            content ''
+            position absolute
+            bottom 20px
+            left 0
+            width 20px
+            background #666666
+            height 2px
+    p
+        font-size 14px
+        color #666666
+        line-height 30px
+
+.main-index-news
+    .content
+        line-height 30px
+        &.h562
+            height 562px
+            @media(max-width 1199px)
+                height auto
+                padding-bottom 40px
+            @media(max-width 767px)
+                padding-bottom 20px
+        &.bgf6f6f6
+            background #f6f6f6
+        &.normal
+            padding 20px
+            border 1px solid #e6e6e6
+            &+.normal
+                margin-top 20px
+            h3
+            .date
+            p
+                padding 0
+            h3
+                @media(max-width 767px)
+                    padding-top 20px
+        h3
+        .date
+        p
+            padding 0 40px
+            @media(max-width 767px)
+                padding 0 20px
+        h3
+            padding-top 40px
+            @media(max-width 767px)
+                padding-top 20px
+        img
+            display block
+            width 100%
+        h3
+            font-size 16px
+            color #333333
+        .date
+            font-size 14px
+            color #999999
+        p
+            font-size 14px
+            color #666666
+            line-height 24px
+.main-contact
+    padding-top 60px
+    .col-sm-6
+        height 310px
+        background url('') center center/100% 100% no-repeat
+        transition 0.3s
+        &:hover
+            background-size 120% 120%
+        @media(max-width 767px)
+            height 200px
+        &+.col-sm-6
+            background-position left center
+            a
+                text-align right
+                float left  
+        a
+            display block
+            float right 
+            max-width 500px
+            width 100%
+            font-size 34px
+            color #ffffff
+            line-height 310px
+            @media(max-width 767px)
+                line-height 200px
+.main-index-brand-scroll
+    padding 60px 0
+    display none+'\9'
+    .container
+        position relative
+    .swiper-container
+        @media(max-width 767px)
+            width 80%
+        .swiper-slide
+            a
+                display block
+                height 120px
+                border 1px solid #e6e6e6
+                background url('') center center no-repeat
+    .right-button
+    .left-button
+        position absolute
+        cursor pointer
+        width 30px
+        transition 0.3s
+    .left-button
+        left -50px
+        top 0
+        bottom 0
+        background url('../img/d33c247a9dd28117539ed4fe191bb2e0.png') center center no-repeat
+        @media(max-width 1350px)
+            left 0
+        @media(max-width 767px)
+            left 10px
+    .right-button
+        right -50px
+        top 0
+        bottom 0
+        background url('../img/1934d1864c30b955cf6521ee7abf287d.png') center center no-repeat
+        @media(max-width 1350px)
+            right 0
+        
+        @media(max-width 767px)
+            right 10px
+.main-fixed-menu
+    position fixed
+    top 50%
+    transform translateY(-50%)
+    right 0
+    transition 0.3s
+    @media(max-width 1350px)
+        transform translate(100%,-50%)
+    a
+        display block
+        width 60px
+        height 60px
+        margin 1px
+        background #191919 url('') center center no-repeat
+
+.main-public-nav
+    font-size 12px
+    color #999999
+    line-height 22px
+    text-align right
+    .container
+        position relative
+        div
+            padding-top 15px
+            padding-bottom 15px
+            border-bottom 1px solid #e6e6e6
+    span
+        color #00a1e9
+.main-company-base-info
+    h3
+        padding 45px 0 35px
+        font-size 24px
+        line-height 34px
+        color #00a0e9
+    p
+        padding-bottom 20px
+        font-size 14px
+        color #555555
+        line-height 30px
+        text-indent 2em
+    .pic
+        padding 30px 0 60px
+        @media(max-width 767px)
+            padding 0 0 20px 0
+        img
+            display block
+            width 100%
+            transition 0.3s
+            &:hover
+                box-shadow 0 0 0 2px #00a1e9
+
+.public-footer
+    background #595959
+    .copy-right
+        padding 20px 0
+        border-top 1px solid #999999
+        font-size 12px
+        color #999999
+        line-height 22px
+        @media(max-width 991px)
+            .col-md-6
+                text-align left
+    .top
+        padding 70px 0 50px
+        @media(max-width 767px)
+            padding 30px 0
+    .brand
+        display block
+        width 126px
+        height 106px
+        @media(max-width 991px)
+            margin 0 auto
+    .nav
+    .share
+        width 100%
+    .nav
+        border-bottom 1px solid #999999
+        @media(max-width 991px)
+            padding-top 40px
+            margin-bottom 40px
+            text-align center
+        .item
+            width 25%
+            font-size 14px
+            color #e5e5e5
+            padding-bottom 30px
+            a
+                transition 0.3s
+                &:hover
+                    color #00a0e9
+    .share
+        padding-top 20px
+        @media(max-width 991px)
+            padding-bottom 40px
+            padding-top 0
+        a
+            margin-right 15px
+            width 28px
+            height 28px
+            border 1px solid #999
+            text-align center
+            line-height 28px
+            transition 0.3s
+            color #999999
+            &:hover
+                color #00a1e9
+                border-color #00a1e9
+    .contact
+        font-size 14px
+        color #e5e5e5
+        line-height 34px
+        p
+            padding-bottom 16px
+            &:hover
+                span
+                    color #00a1e9
+                    border-color #00a1e9
+            span
+                float left
+                margin-right 25px
+                width 34px
+                height 34px
+                text-align center
+                line-height 34px
+                border 1px solid #e5e5e5
+                border-radius 50%
+                font-size 20px
+                transition 0.3s
+
+.main-product-type
+    .label
+        padding 20px 0 30px
+        a
+            font-size 14px
+            padding 0 20px
+            line-height 26px
+            height 26px
+            color #999999
+            border-radius 3px
+            transition 0.3s
+            margin 5px 5px 5px 0
+            &:hover
+            &.active
+                background #00a1e9
+                color #ffffff
+    .list
+        .item
+            display block
+            position relative
+            margin-bottom 30px
+            &:hover
+                .tips
+                    bottom 30px
+                    background-color rgba(#00a1e9,0.8)
+                .tips.pos
+                    color #00a1e9
+                    bottom 0
+                    background none
+            .pic
+                img
+                    display block
+                    width 100%
+            .tips
+                position absolute
+                right 0
+                left 25px
+                font-size 16px
+                color #ffffff
+                height 60px
+                line-height 60px
+                padding-left 30px
+                bottom 10px
+                z-index 1
+                transition 0.3s
+                background rgba(#000,0.5) url('../img/7c661dd8b3f7028eabc04cb5c49f85a2.png') right 50px center no-repeat
+                &.pos
+                    position static
+                    background none
+                    color #555555
+                    line-height 26px
+                    padding 15px 0 25px
+                    height auto
+                    border-bottom 1px solid #e6e6e6
+                    white-space nowrap
+                    text-overflow ellipsis
+                    overflow hidden
+    .news-list
+        .item
+            display block
+            padding 30px 0
+            transition 0.3s
+            @media(max-width 767px)
+                padding 15px 0
+            &:hover
+                background #00a1e9
+                padding 30px
+                @media(max-width 767px)
+                    padding 15px
+                .content
+                    h3
+                    p
+                    .type
+                        color #ffffff
+                .date
+                    span
+                        color #fff
+                        background-image url('../img/50ff58012829cfadb3a86d48f9056596.png')
+                        @media(max-width 767px)
+                            background none
+            .pic
+                width 260px
+                @media(max-width 767px)
+                    width 100%
+                img
+                    display block
+                    width 100%
+            .content
+            .date
+                height 154px
+                @media(max-width 767px)
+                    height auto 
+            .content
+                position relative
+                padding-left 30px
+                width 600px
+                @media(max-width 1199px)
+                    width calc(100% - 300px)
+                @media(max-width 767px)
+                    width 100%
+                    padding-left 0
+                    width 100%
+                h3  
+                    padding 20px 0 12px
+                    line-height 1
+                    font-size 16px
+                    color #00a1e9
+                p
+                    font-size 14px
+                    color #666666
+                    line-height 24px
+                .type
+                    font-size 14px
+                    color #999999
+                    position absolute
+                    bottom 0
+                    left 30px
+                    @media(max-width 767px)
+                        position static
+                        padding-top 10px
+            .date
+                padding 20px 0
+                box-sizing border-box
+                @media(max-width 767px)
+                    padding 0
+                span
+                    display block
+                    height 100%
+                    border-left 1px solid #dbdbdb
+                    font-size 26px
+                    color #00a1e9
+                    text-align center
+                    padding 25px 0
+                    background url('../img/c35b011a4052707e221870b2181d2bbb.png') 55px 70% no-repeat
+                    box-sizing border-box
+                    transition 0
+                    @media(max-width 767px)
+                        background none
+                        border-left none
+                        padding 0
+                        font-size 14px
+                        line-height 24px
+                        text-align left
+                        transform translateY(-100%)
+                        float right 
+                    
+                
+
+
+
+.public-page-control
+    font-size 0
+    text-align center
+    &.p20-0-70
+        padding 20px 0 60px
+    &.p50-0
+        padding 50px 0
+    &.p70-0
+        padding 70px 0 70px
+    a
+        display inline-block
+        min-width 38px
+        height 38px
+        font-size 14px
+        color #00a1e9
+        line-height 36px
+        border 1px solid #d9d9d9
+        transition 0.3s
+        padding 0 13px
+        box-sizing border-box
+        margin 0 3px 10px
+        &:hover
+        &.active
+            color #ffffff
+            background #00a1e9
+            border-color #00a1e9
+
+.main-product-details
+    .content
+        position relative
+        &:after
+            content ''
+            position absolute
+            right -67px
+            top 0
+            bottom 0
+            border-left 1px solid #e6e6e6
+            @media(max-width 1199px)
+                display none
+        h3
+            font-size 24px
+            color #17a9eb
+            line-height 1
+            line-height 34px
+            text-align center
+            padding 42px 0 13px
+        .date
+            text-align center
+            font-size 12px
+            color #999999
+        .label-container
+            font-size 14px
+            color #555555
+            line-height 25px
+            .wrap
+                padding 20px 0
+                @media(max-width 767px)
+                    padding 10px 0
+            .row
+                border-bottom 1px dashed #e6e6e6
+            .label
+                color #999999
+                width 5em
+                display inline-block
+                text-align justify
+                text-align-last justify
+                line-height 0
+                &:after
+                    content ""
+                    display inline-block
+                    width 100%
+                    height 0
+                    overflow hidden
+                    vertical-align top
+                    line-height 0
+                    font-size 0
+        p
+            padding-top 25px
+            font-size 14px
+            color #8e8e8e
+            line-height 30px
+        .pic
+            padding-top 25px
+            img
+                display block
+                width 100%
+        .page
+            margin-top 25px
+            padding 30px 0 50px
+            border-top 1px solid #e6e6e6
+            a
+                font-size 14px
+                color #999
+                transition 0.3s
+                line-height 30px
+                display block
+                &:hover
+                    color #00a1e9
+            .back
+                width 130px
+                height 40px
+                color #ffffff
+                background #00a1e9
+                text-align center
+                line-height 40px
+                &:hover
+                    color #ffffff
+    .hot
+        h3
+            margin 50px 0 35px
+            padding-left 10px
+            font-size 16px
+            color #555555
+            border-left 3px solid #00a1e9
+            height 20px
+            line-height 20px
+
+
+.main-join-me
+    .wrap
+        margin-top 50px
+        border-top 1px solid #e6e6e6
+    .title
+        color #555555
+        line-height 28px
+        border-bottom 1px solid #e6e6e6
+        background url('../img/079b120614b8b949a1ddb040bc376ffc.png') right center no-repeat
+        padding 26px 0
+        transition 0.3s
+        &:hover
+        &.active
+            background-color #00a1e9
+            padding 26px 30px
+            color #ffffff
+            background-position right 30px center
+            background-image url('../img/e8793ac9c14cd53e21fee89cd44d8c3b.png')
+            @media(max-width 767px)
+                padding 26px 15px
+            h3
+                background-image url('../img/5e14005511cfc7e331ae205e4c067b92.png')
+
+        h3
+        p
+            width 200px
+            @media(max-width 991px)
+                width 150px
+            @media(max-width 767px)
+                display block
+                width 100%
+
+        h3
+            font-size 18px
+            text-indent 33px
+            background url('../img/909f6992e706420ca02f97d26a6d29f6.png') left center no-repeat
+        p
+            font-size 14px
+            @media(max-width 767px)
+                padding-top 10px
+    .content
+        border-bottom 1px solid #e6e6e6
+        padding 0 40px 20px
+        display none
+        @media(max-width 991px)
+            padding 0 0 20px
+        h4
+            padding-top 35px
+            color #00a1e9
+            font-size 16px
+            line-height 1.5
+            padding-bottom 10px
+        p
+            font-size 14px
+            color #666666
+            line-height 30px
+            
+
+.main-contact-us
+    padding-top 25px
+    .item
+        margin-top 75px
+        position relative
+        text-align center
+        border 1px solid #eaeaea
+        transition 0.3s
+        &:hover
+            background #00a0e9
+            .icon
+                border-color #ffffff
+                background #00a0e9
+                span
+                    color #ffffff
+            a
+                color #00a0e9
+                background #fff
+            h3
+            p
+                color #ffffff
+        .icon
+            position absolute
+            left 50%
+            top 0
+            transform translate(-50%,-50%)
+            width 120px
+            height 120px
+            border 1px dashed #eaeaea
+            border-radius 50%
+            background #ffffff
+            text-align center
+            transition 0.3s
+            span
+                font-size 60px
+                color #00a0e9
+                line-height 120px
+                transition 0.3s
+        h3
+            padding-top 80px
+            font-size 16px
+            color #333333
+            line-height 26px
+            transition 0.3s
+        p
+            padding 15px 40px 0
+            font-size 14px
+            color #666666
+            line-height 30px
+            transition 0.3s
+        a
+            display block
+            margin 20px auto 30px
+            width 94px
+            height 38px
+            line-height 38px
+            font-size 14px
+            text-align center
+            color #b2b2b2
+            background #e6e6e6
+            transition 0.3s
+    .map-container
+        margin-top 35px
+        margin-bottom 60px
+        overflow hidden
+        border 1px solid #e6e6e6
+        box-sizing border-box
+    .map
+        max-width 66%
+        width 100%
+        box-sizing border-box
+        @media(max-width 1199px)
+            max-width 100%
+        img
+            display block
+            width 100%
+    .add-info
+        max-width 34%
+        width 100%
+        box-sizing border-box
+        background #f5f5f5
+        padding-bottom 666px
+        margin-bottom -666px
+        @media(max-width 1199px)
+            max-width 100%
+            padding-bottom 20px
+            margin-bottom 0
+        h3
+            font-size 18px
+            color #333333
+            box-sizing border-box
+            padding 20px 0 20px 70px
+            line-height 46px
+            background url('../img/2cec127a3c9820e282c9003609d8d651.png') 30px center no-repeat
+            height 86px
+        h4
+            padding-left 70px
+            font-size 16px
+            color #333333
+            padding-top 25px
+            line-height 26px
+            @media(max-width 1199px)
+                padding-top 0
+        p
+            margin-top 15px
+            padding-left 70px
+            padding-right 30px
+            font-size 14px
+            color #666666
+            line-height 30px
+            background url('') 30px top no-repeat
+            
+            
+.main-server-center
+    .item
+        display block
+        margin-top 50px
+        transition 0.3s
+        box-sizing border-box
+        &:hover
+            background #00a1e9
+            p
+                color #ffffff
+            .pic
+            p
+                transform scale(0.9)
+        .pic
+            transition 0.3s
+            img
+                display block
+                width 100%
+        p
+            padding-top 10px
+            font-size 14px
+            color #555555
+            line-height 30px
+            transition 0.3s
